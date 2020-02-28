@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(img/fondo2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login {
+  color: #ffffff;
+  width: 200px;
+  height: 260px;
+  top: 50%;
+  left: 50%;
+  padding: 10PX;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #282f37;
+}
+.login .candado {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 32px );
+}
+.login h1 {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.login label {
+  padding: 13px;
+  font-size: 18px;
+}
+.login input {
+  margin: 1em;
+  height: 27px;
+  margin-bottom: 10px;
+}
+.login input[type=password], .login input[type=email] {
+  border: none;
+  background: #d9d9d9;
+}
+.login input[type=submit] {
+  text-align: center;
+  width: 90px;
+  bottom: 3px;
+  left: calc( 50% - 60px );
+  position: absolute;
+  background: #5B6E80;
+  color: #ffffff;
+}
