@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+ 
 }
 
 body {
   background: url(img/fondo2.jpg) no-repeat center center fixed;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .login {
@@ -26,8 +29,8 @@ body {
   top: -40px;
   left: calc(50% - 32px );
 }
-.login h1 {
-  padding-top: 20px;
+h1 {
+  padding-top: 15px;
   padding-bottom: 16px;
   text-align: center;
 }
@@ -36,20 +39,19 @@ body {
   font-size: 18px;
 }
 .login input {
-  margin: 1em;
+  border: none;
   height: 27px;
   margin-bottom: 10px;
 }
 .login input[type=password], .login input[type=email] {
-  border: none;
   background: #d9d9d9;
+  margin: 10px;
+  float: left;
+  position: absolute
 }
 .login input[type=submit] {
-  text-align: center;
-  width: 90px;
-  bottom: 3px;
-  left: calc( 50% - 60px );
-  position: absolute;
+  width: 100%;
   background: #5B6E80;
   color: #ffffff;
+  margin-top: 10px
 }
