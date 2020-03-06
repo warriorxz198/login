@@ -1,57 +1,55 @@
 * {
-  margin: 0;
-  padding: 0;
- 
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background: url(img/fondo2.jpg) no-repeat center center fixed;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+	background: url(img/fondo2.jpg) no-repeat center center fixed;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
 }
 
 .login {
-  color: #ffffff;
-  width: 200px;
-  height: 260px;
-  top: 50%;
-  left: 50%;
-  padding: 10PX;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: #282f37;
+	color: #ffffff;
+	width: 200px;
+	height: 260px;
+	top: 50%;
+	left: 50%;
+	padding: 10px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background: #282f37;
 }
 .login .candado {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: -40px;
-  left: calc(50% - 32px );
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: -40px;
+	left: calc(50% - 32px);
 }
 h1 {
-  padding-top: 15px;
-  padding-bottom: 16px;
-  text-align: center;
+	padding-top: 15px;
+	padding-bottom: 16px;
+	text-align: center;
 }
 .login label {
-  padding: 13px;
-  font-size: 18px;
+	padding: 13px;
+	font-size: 18px;
 }
 .login input {
-  border: none;
-  height: 27px;
-  margin-bottom: 10px;
+	border: none;
+	height: 27px;
+	margin-bottom: 10px;
 }
-.login input[type=password], .login input[type=email] {
-  background: #d9d9d9;
-  margin: 10px;
-  float: left;
-  position: absolute
+.login input[type='password'],
+.login input[type='email'] {
+	background: #d9d9d9;
+	margin: 10px;
 }
-.login input[type=submit] {
-  width: 100%;
-  background: #5B6E80;
-  color: #ffffff;
-  margin-top: 10px
+.login input[type='submit'] {
+	width: 100%;
+	background: #5b6e80;
+	color: #ffffff;
+	margin-top: 10px;
 }
