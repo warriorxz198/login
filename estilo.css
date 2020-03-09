@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -12,8 +13,9 @@ body {
 
 .login {
 	color: #ffffff;
-	width: 200px;
-	height: 260px;
+	width: 60%;
+	max-width: 360px;
+	height: 270px;
 	top: 50%;
 	left: 50%;
 	padding: 10px;
@@ -46,10 +48,13 @@ h1 {
 .login input[type='email'] {
 	background: #d9d9d9;
 	margin: 10px;
+	display: inline-block;
+	width: 92%;
 }
 .login input[type='submit'] {
 	width: 100%;
 	background: #5b6e80;
 	color: #ffffff;
 	margin-top: 10px;
+	cursor: pointer;
 }

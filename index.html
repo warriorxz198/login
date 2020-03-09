@@ -10,23 +10,28 @@
 		<div class="login">
 			<img class="candado" src="img/candado.png" alt="" srcset="" />
 			<h1>inciar sesion</h1>
+			<form action="">
 			<div class="contenedor_input">
 				<label for="correo">correo:</label>
 				<input
 					type="email"
 					name="correo"
-					placeholder="example@gmail.com"
+					placeholder="ejemplo@gmail.com"
 					id="correo"
+					required
 				/>
+			<div class="contenedor_input">
 				<label for="contraseña">contraseña:</label>
 				<input
 					type="password"
 					name="contraseña"
 					placeholder="12345"
 					id="contraseña"
+					required
 				/>
 			</div>
-			<input type="submit" value="entrar" />
+				<input type="submit" value="entrar" />
+			</form>
 		</div>
 	</body>
 </html>
