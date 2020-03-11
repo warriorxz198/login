@@ -65,15 +65,15 @@ h1 {
 }
 @media (min-width: 250px) and (max-width: 297px) {
 	.login {
-		width: 68%;
+		width: 72%;
 	}
 	h1 {
 		font-size: 28px;
 	}
 }
-@media (min-width: 200px) and (max-width: 249px) {
+@media (min-width: 199px) and (max-width: 249px) {
 	.login {
-		width: 80%;
+		width: 82%;
 	}
 	h1 {
 		font-size: 27px;
