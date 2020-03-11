@@ -79,3 +79,11 @@ h1 {
 		font-size: 27px;
 	}
 }
+@media (min-width: 150px) and (max-width: 198px) {
+	.login {
+		width: 100%;
+	}
+	h1 {
+		font-size: 25px;
+	}
+}
