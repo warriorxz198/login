@@ -51,7 +51,7 @@ h1 {
 	display: inline-block;
 	width: 92%;
 }
-.login input[type='submit'] {
+.login input[type='button'] {
 	width: 100%;
 	background: #5b6e80;
 	color: #ffffff;
