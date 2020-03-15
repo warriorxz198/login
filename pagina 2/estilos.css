@@ -1,0 +1,28 @@
+h1 {
+	color: green;
+}
+@media (min-width: 300px) and (max-width: 400px) {
+	h1 {
+		color: darkcyan;
+	}
+}
+@media (min-width: 262px) and (max-width: 299px) {
+	h1 {
+		color: yellow;
+	}
+}
+@media (min-width: 238px) and (max-width: 261px) {
+	h1 {
+		color: orange;
+	}
+}
+@media (min-width: 200px) and (max-width: 237px) {
+	h1 {
+		color: rgb(133, 88, 32);
+	}
+}
+@media (max-width: 199px) {
+	h1 {
+		color: red;
+	}
+}
