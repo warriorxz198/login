@@ -14,3 +14,12 @@ $(function mostrar_menu() {
 		}
 	});
 });
+
+var gatito = 0;
+
+function gato() {
+	if (gatito === 0) {
+		alert('miauuuu');
+		gatito++;
+	}
+}

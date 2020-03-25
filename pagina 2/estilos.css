@@ -14,27 +14,32 @@
 }
 #menu a {
 	text-decoration: none;
-}
-#menu a li {
 	color: #ffffff;
 	line-height: 3;
 	padding-left: 20px;
 }
-#escondido {
+
+#inicio {
 	width: 100%;
 	height: 500px;
+	background-color: red;
+	text-align: center;
+}
+#escondido {
+	width: 100%;
+	height: 100%;
 	background-color: indigo;
+	text-align: center;
 }
 .escondido {
 	display: none;
-	width: 100%;
 }
 .escondido li {
 	line-height: 2.5;
 	height: 10px;
 }
-#inicio {
-	width: 100%;
-	height: 500px;
-	background-color: red;
+.imagenes_escondidas {
+	width: 80%;
+	height: 100%;
+	margin: 10px;
 }
