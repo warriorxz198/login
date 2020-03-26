@@ -15,6 +15,19 @@ $(function mostrar_menu() {
 	});
 });
 
+$(function despeglar() {
+	$('#menu').on('click', function() {
+		$(this).slideToggle();
+		contador++;
+		if (contador === 9) {
+			document
+				.querySelectorAll('.escondido')
+				.forEach((a) => (a.style.display = 'initial'));
+			alert('desbloqueaste algo interesante en el menu mira que es!!!');
+		}
+	});
+});
+
 var gatito = 0;
 
 function gato() {

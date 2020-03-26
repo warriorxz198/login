@@ -2,10 +2,19 @@
 	margin: 0;
 	padding: 0;
 }
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 #contenedor_menu {
 	background-color: #282f37;
 	color: #ffffff;
 	padding: 20px;
+}
+#logos {
+	padding-top: 0;
 }
 #menu {
 	list-style: none;
@@ -14,9 +23,11 @@
 }
 #menu a {
 	text-decoration: none;
+	display: inline-block;
 	color: #ffffff;
 	line-height: 3;
 	padding-left: 20px;
+	width: 100%;
 }
 
 #inicio {
@@ -24,12 +35,35 @@
 	height: 500px;
 	background-color: red;
 	text-align: center;
+	padding-top: 5rem;
+}
+#tema1 {
+	width: 100%;
+	height: 500px;
+	background-color: limegreen;
+	text-align: center;
+	padding-top: 5rem;
+}
+#tema2 {
+	width: 100%;
+	height: 500px;
+	background-color: cadetblue;
+	text-align: center;
+	padding-top: 5rem;
+}
+#tema3 {
+	width: 100%;
+	height: 500px;
+	background-color: crimson;
+	text-align: center;
+	padding-top: 5rem;
 }
 #escondido {
 	width: 100%;
 	height: 100%;
 	background-color: indigo;
 	text-align: center;
+	padding-top: 80px;
 }
 .escondido {
 	display: none;
