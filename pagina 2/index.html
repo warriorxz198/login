@@ -5,19 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>pagina 2</title>
 		<link rel="stylesheet" href="estilos.css" />
+		<link rel="stylesheet" href="fontello.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
 				<div id="contenedor_menu">
-					<h1 id="logos">Logos</h1>
+					<h1 id="logos ">Logos</h1>
+					<i id="boton_menu" class="boton_menu icon-menu"></i
+					><i
+						onclick="menu_2()"
+						id="boton_left"
+						class="boton_left icon-left-big"
+					></i>
 				</div>
 				<ul id="menu">
-					<li><a href="#inicio">inicio</a></li>
-					<li><a href="#tema1">tema1</a></li>
-					<li><a href="#tema2">tema2</a></li>
-					<li><a href="#tema3">tema3</a></li>
+					<li class="links"><a href="#inicio">inicio</a></li>
+					<li class="links"><a href="#tema1">tema1</a></li>
+					<li class="links"><a href="#tema2">tema2</a></li>
+					<li class="links"><a href="#tema3">tema3</a></li>
+					<li onclick="menu_2()" id="cambio">
+						<a href="#">cambio</a>
+					</li>
 					<li class="escondido"><a href="#escondido">escondido</a></li>
+				</ul>
+				<ul id="menu2">
+					<li><a href="#inicio">menu2</a></li>
+					<li><a href="#tema1">tema4</a></li>
+					<li><a href="#tema2">tema5</a></li>
+					<li><a href="#">tema6</a></li>
 				</ul>
 			</nav>
 		</header>
