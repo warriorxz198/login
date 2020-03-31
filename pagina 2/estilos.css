@@ -14,6 +14,9 @@ header {
 	left: 84%;
 	top: 24px;
 }
+.icon-cancel {
+	color: red;
+}
 #boton_left {
 	position: absolute;
 	font-size: 20px;
@@ -108,4 +111,25 @@ header {
 	width: 80%;
 	height: 100%;
 	margin: 10px;
+}
+
+@media (min-width: 600px) {
+	#boton_menu {
+		display: none;
+	}
+	#menu {
+		display: flex;
+		position: absolute;
+		right: 5rem;
+		top: 10px;
+		background-color: transparent;
+		border: 1px solid transparent;
+	}
+	#menu a {
+		margin-left: 20px;
+	}
+
+	#menu a:hover {
+		border: 1px solid red;
+	}
 }
