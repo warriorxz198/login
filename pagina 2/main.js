@@ -6,11 +6,8 @@ var boton1 = document.getElementById('boton_menu');
 var boton2 = document.getElementById('boton_left');
 
 $(document).ready(function mostrar_menu() {
-	$('#boton_menu').on('click', function() {
-		$(this)
-			.parent()
-			.next()
-			.slideToggle();
+	$('#boton_menu').on('click', function () {
+		$(this).parent().next().slideToggle();
 		contador++;
 
 		if (contador === 9) {
@@ -23,7 +20,7 @@ $(document).ready(function mostrar_menu() {
 });
 
 $(function despeglar() {
-	$('.links').on('click', function() {
+	$('.links').on('click', function () {
 		if (screen.width <= 599) {
 			$(this)
 				.parent()
@@ -85,7 +82,7 @@ function gato() {
 	}
 }
 
-$(function() {
+$(function () {
 	$('#Michi').on('click', function Piojoso() {
 		if (Michi) {
 			alert('miau');
