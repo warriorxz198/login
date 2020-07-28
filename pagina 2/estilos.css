@@ -8,6 +8,9 @@ header {
 	left: 0;
 	width: 100%;
 }
+.titulos {
+	margin-bottom: 20px;
+}
 #boton_menu {
 	margin-left: auto;
 	font-size: 23px;
@@ -85,15 +88,17 @@ header {
 #imagenes_tema1 {
 	display: flex;
 	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
 }
 
 #llave {
 	padding: 40px 0 0 30px;
 	height: 50px;
+	display: none;
 }
 #candado {
 	height: 100px;
-	margin-left: auto;
 }
 
 #tema2 {
@@ -153,10 +158,11 @@ header {
 		right: 1rem;
 		top: 10px;
 		background-color: transparent;
-		border: 1px solid transparent;
 	}
 	#menu a {
-		margin-left: 20px;
+		padding-left: 0px;
+		margin: 0 0 0 20px;
+		text-align: center;
 	}
 
 	#menu a:hover {

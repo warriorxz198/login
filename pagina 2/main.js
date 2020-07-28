@@ -83,11 +83,19 @@ function gato() {
 }
 
 $(function () {
-	$('#Michi').on('click', function Piojoso() {
+	$('#Michi').on('click', function () {
 		if (Michi) {
 			alert('miau');
 		} else {
 			alert('no encontrado');
 		}
+	});
+});
+
+$(function llave() {
+	$('#llave2').on('click', function () {
+		$(this).toggle();
+		$("#llave").toggle();
+		alert("has econtrado la llave!!!")
 	});
 });
