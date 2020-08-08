@@ -2,11 +2,22 @@
 	margin: 0;
 	padding: 0;
 }
+p {
+	font-size: 18px;
+}
 header {
 	position: fixed;
+	z-index: 2000;
 	top: 0;
 	left: 0;
 	width: 100%;
+}
+section {
+	text-align: center;
+}
+img {
+	max-width: 600px;
+	max-height: 900px;
 }
 .titulos {
 	margin-bottom: 20px;
@@ -28,7 +39,6 @@ header {
 }
 #contenedor_menu {
 	display: flex;
-
 	background-color: #282f37;
 	color: #ffffff;
 	padding: 20px;
@@ -48,9 +58,11 @@ header {
 	line-height: 3;
 	padding-left: 20px;
 	width: 100%;
+	cursor: pointer;
 }
 #menu a:hover {
 	background-color: hsl(212, 40%, 25%);
+	cursor: pointer;
 }
 #menu2 {
 	list-style: none;
@@ -71,18 +83,24 @@ header {
 }
 
 #inicio {
-	width: 100%;
-	height: 500px;
+	height: auto;
 	background-color: red;
-	text-align: center;
-	padding-top: 5rem;
+	padding: 5rem 20px 200px 20px;
 }
 #tema1 {
-	width: 100%;
-	height: 500px;
+	height: 100%;
 	background-color: limegreen;
-	text-align: center;
-	padding-top: 5rem;
+	padding: 5rem 2rem;
+}
+
+#contenedor_Fderek {
+	z-index: 5;
+}
+#Fderek {
+	width: 100%;
+}
+.Tderek {
+	font-size: 20px;
 }
 
 #imagenes_tema1 {
@@ -95,30 +113,51 @@ header {
 #llave {
 	padding: 40px 0 0 30px;
 	height: 50px;
+	width: 40%;
+	max-width: 130px;
 	display: none;
 }
 #candado {
 	height: 100px;
+	width: 70%;
+	max-width: 190px;
 }
 
 #tema2 {
-	width: 100%;
-	height: 500px;
+	height: 100vh;
 	background-color: cadetblue;
 	text-align: center;
 	padding-top: 5rem;
 }
 #tema3 {
-	width: 100%;
-	height: 100vh;
+	height: 100%;
 	max-height: 760px;
 	background-color: crimson;
 	text-align: center;
 	padding-top: 5rem;
 }
+.Tpedro {
+	display: inline-block;
+}
+#Bpedro {
+	background-color: transparent;
+	border: transparent;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	cursor: text;
+}
+#Bpedro:focus {
+	outline: none;
+}
+
+#fotopedro {
+	display: none;
+	margin: auto;
+	width: 100%;
+}
 
 #contenedor_llave {
-	height: 20rem;
+	height: auto;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -129,11 +168,9 @@ header {
 }
 
 #escondido {
-	width: 100%;
-	height: 100%;
+	height: auto;
 	background-color: indigo;
-	text-align: center;
-	padding-top: 80px;
+	padding: 2rem;
 }
 .escondido {
 	display: none;
@@ -143,9 +180,9 @@ header {
 	height: 10px;
 }
 .imagenes_escondidas {
-	width: 80%;
-	height: 100%;
-	margin: 10px;
+	width: 100%;
+	display: block;
+	margin: auto;
 }
 
 @media (min-width: 600px) {
@@ -167,5 +204,17 @@ header {
 
 	#menu a:hover {
 		border: 1px solid red;
+	}
+	#contenedor_Fderek {
+		z-index: 5;
+		width: 100vw;
+		shape-outside: circle(38% at 60% 50%);
+		clip-path: circle(38% at 60% 50%);
+		max-width: 600px;
+		float: right;
+	}
+
+	.Tderek {
+		font-size: 20px;
 	}
 }

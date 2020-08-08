@@ -4,6 +4,7 @@ var menu = document.getElementById('menu');
 var menu2 = document.getElementById('menu2');
 var boton1 = document.getElementById('boton_menu');
 var boton2 = document.getElementById('boton_left');
+var Pedro = false
 
 $(document).ready(function mostrar_menu() {
 	$('#boton_menu').on('click', function () {
@@ -31,7 +32,7 @@ $(function despeglar() {
 				document
 					.querySelectorAll('.escondido')
 					.forEach((a) => (a.style.display = 'initial'));
-				alert('desbloqueaste algo interesante en el menu mira que es!!!');
+				alert('5 años han pasado y ante ti me eh presentado (desbloqueaste algo en el menu)');
 			}
 		}
 
@@ -43,10 +44,12 @@ $(function despeglar() {
 			document
 				.querySelectorAll('.escondido')
 				.forEach((a) => (a.style.display = 'initial'));
-			alert('desbloqueaste algo interesante en el menu mira que es!!!');
+			alert('5 años han pasado y ante ti me eh presentado (desbloqueaste algo en el menu)');
 		}
 	});
 });
+
+//este es la funcion para la visualizacion de "logros" en el menu//
 
 function menu_2() {
 	if (screen.width <= 599) {
@@ -79,6 +82,7 @@ function gato() {
 		$('#michi').removeClass('icon-cancel-1');
 		$('#michi').addClass('icon-check');
 		Michi = true;
+		Pedro = true;
 	}
 }
 
@@ -99,3 +103,12 @@ $(function llave() {
 		alert("has econtrado la llave!!!")
 	});
 });
+
+$(function () {
+	$('#Bpedro').on('click', function () {
+		if (Pedro == true) {
+			$("#fotopedro").css("display", "block");
+		}
+	});
+});
+
