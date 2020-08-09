@@ -104,10 +104,15 @@ $(function llave() {
 	});
 });
 
-$(function () {
+$(function eventoPedro() {
 	$('#Bpedro').on('click', function () {
 		if (Pedro == true) {
 			$("#fotopedro").css("display", "block");
+			$("#conocidos").text("Pedro");
+			document
+				.querySelectorAll('.Tpedro')
+				.forEach((a) => (a.style.display = 'none'));
+			$("#Tpedrofinal").text("asi que el viejo darek te envio conmigo?");
 		}
 	});
 });

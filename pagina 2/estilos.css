@@ -3,7 +3,7 @@
 	padding: 0;
 }
 p {
-	font-size: 18px;
+	font-size: 20px;
 }
 header {
 	position: fixed;
@@ -131,12 +131,15 @@ img {
 }
 #tema3 {
 	height: 100%;
-	max-height: 760px;
 	background-color: crimson;
 	text-align: center;
 	padding-top: 5rem;
 }
 .Tpedro {
+	display: inline-block;
+}
+#Tpedrofinal {
+	padding-bottom: 35rem;
 	display: inline-block;
 }
 #Bpedro {
@@ -170,7 +173,13 @@ img {
 #escondido {
 	height: auto;
 	background-color: indigo;
-	padding: 2rem;
+	padding: 5rem 2rem 2rem 2rem;
+}
+#escondido p {
+	color: white;
+}
+#escondido img {
+	margin: 1rem auto;
 }
 .escondido {
 	display: none;
@@ -204,6 +213,9 @@ img {
 
 	#menu a:hover {
 		border: 1px solid red;
+	}
+	#tema1 {
+		height: 100vh;
 	}
 	#contenedor_Fderek {
 		z-index: 5;
