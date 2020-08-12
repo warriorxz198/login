@@ -19,6 +19,10 @@ img {
 	max-width: 600px;
 	max-height: 900px;
 }
+footer {
+	padding-top: 12rem;
+	background-color: crimson;
+}
 .titulos {
 	margin-bottom: 20px;
 }
@@ -41,7 +45,7 @@ img {
 	display: flex;
 	background-color: #282f37;
 	color: #ffffff;
-	padding: 20px;
+	padding: 20px 2rem;
 }
 #logos {
 	padding-top: 0;
@@ -81,66 +85,64 @@ img {
 #menu2 a:hover {
 	background-color: hsl(212, 40%, 25%);
 }
-
 #inicio {
 	height: auto;
 	background-color: red;
-	padding: 5rem 20px 200px 20px;
+	padding: 5rem 2rem 200px 2rem;
 }
-#tema1 {
+#Entrevista {
 	height: 100%;
 	background-color: limegreen;
 	padding: 5rem 2rem;
 }
-
 #contenedor_Fderek {
 	z-index: 5;
 }
 #Fderek {
 	width: 100%;
 }
-.Tderek {
-	font-size: 20px;
+#casa {
+	display: none;
+	background-color: #9ee2b3;
+	height: 100%;
+	padding: 5rem 2rem 2rem 2rem;
 }
-
+#casa > img {
+	margin: 2rem auto;
+	width: 100%;
+}
 #imagenes_tema1 {
 	display: flex;
 	margin-top: 30px;
 	justify-content: center;
 	align-items: center;
 }
-
 #llave {
 	padding: 40px 0 0 30px;
-	height: 50px;
+	height: 40%;
 	width: 40%;
 	max-width: 130px;
 	display: none;
 }
 #candado {
-	height: 100px;
+	height: 100%;
 	width: 70%;
 	max-width: 190px;
 }
-
-#tema2 {
-	height: 100vh;
+#Lugares {
+	height: 100%;
 	background-color: cadetblue;
 	text-align: center;
-	padding-top: 5rem;
+	padding: 5rem 2rem 2rem;
 }
-#tema3 {
+#Sconocidos {
 	height: 100%;
 	background-color: crimson;
 	text-align: center;
-	padding-top: 5rem;
+	padding: 5rem 2rem 0 2rem;
 }
 .Tpedro {
-	display: inline-block;
-}
-#Tpedrofinal {
-	padding-bottom: 35rem;
-	display: inline-block;
+	display: inline;
 }
 #Bpedro {
 	background-color: transparent;
@@ -152,24 +154,21 @@ img {
 #Bpedro:focus {
 	outline: none;
 }
-
 #fotopedro {
 	display: none;
-	margin: auto;
+	margin: 2rem auto;
 	width: 100%;
 }
-
 #contenedor_llave {
 	height: auto;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
-
 #llave2 {
 	height: 50px;
+	display: none;
 }
-
 #escondido {
 	height: auto;
 	background-color: indigo;
@@ -201,7 +200,7 @@ img {
 	#menu {
 		display: flex;
 		position: absolute;
-		right: 1rem;
+		right: 3rem;
 		top: 10px;
 		background-color: transparent;
 	}
@@ -214,9 +213,6 @@ img {
 	#menu a:hover {
 		border: 1px solid red;
 	}
-	#tema1 {
-		height: 100vh;
-	}
 	#contenedor_Fderek {
 		z-index: 5;
 		width: 100vw;
@@ -225,8 +221,15 @@ img {
 		max-width: 600px;
 		float: right;
 	}
-
-	.Tderek {
-		font-size: 20px;
+	#Lugares {
+		height: 100vh;
+	}
+	#Sconocidos {
+		height: 100vh;
+	}
+}
+@media (min-width: 800px) {
+	#Entrevista {
+		height: 100vh;
 	}
 }

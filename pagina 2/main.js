@@ -108,7 +108,8 @@ $(function eventoPedro() {
 	$('#Bpedro').on('click', function () {
 		if (Pedro == true) {
 			$("#fotopedro").css("display", "block");
-			$("#conocidos").text("Pedro");
+			$("#conocidos").text("pedro");
+			$("#Tconocidos").text("Pedro");
 			document
 				.querySelectorAll('.Tpedro')
 				.forEach((a) => (a.style.display = 'none'));
@@ -117,3 +118,14 @@ $(function eventoPedro() {
 	});
 });
 
+$(document).ready(function () {
+	$('#ricaurte').on('click', function () {
+		if (Pedro == true) {
+			$("#casa").css("display", "block");
+			// alert('ya casi llegas al hogar solo sube 2 cuadras mas');
+
+			alert($("#casa").scrollTop() + " px");
+			$("#llave2").css("display", "block");
+		}
+	});
+});
