@@ -75,23 +75,35 @@ function menu_2() {
 var gatito = 0;
 var Michi = false;
 
-function gato() {
-	if (gatito === 0) {
-		alert('miauuuu');
-		gatito++;
-		$('#michi').removeClass('icon-cancel-1');
-		$('#michi').addClass('icon-check');
-		Michi = true;
-		Pedro = true;
-	}
-}
 
-$(function () {
+function logros(logro_mensaje) {
+
+	$(".audio")[1].play();
+
+	alert("logro desbloqueado: " + logro_mensaje)
+};
+
+$(function gato() {
+	$("#Gato_negro").on("click", function () {
+		if (gatito == 0) {
+			gatito++;
+			$('#michi').removeClass('icon-cancel-1');
+			$('#michi').addClass('icon-check');
+			Michi = true;
+			Pedro = true;
+			logros("gato");
+			$(".audio")[0].play();
+			$("#Tescondido").css("display", "block");
+		}
+	});
+});
+
+$(function logro_gato() {
 	$('#Michi').on('click', function () {
-		if (Michi) {
-			alert('miau');
+		if (Michi == true) {
+			alert('la aventura con piojoso a empezado felicidades!');
 		} else {
-			alert('no encontrado');
+			alert('habla con el gato');
 		}
 	});
 });
@@ -113,7 +125,7 @@ $(function eventoPedro() {
 			document
 				.querySelectorAll('.Tpedro')
 				.forEach((a) => (a.style.display = 'none'));
-			$("#Tpedrofinal").text("asi que el viejo darek te envio conmigo?");
+			$("#Tpedrofinal").text("asi que el viejo darek te envio conmigo?.... bien a donde tienes que ir es subir por aqui hasta llegar al barrio ricaurte y subir 2 cuadras y encontras una casa azul ahi sera el lugar ... no te preocupes no ahi mas casas azules por ahi");
 		}
 	});
 });
@@ -124,8 +136,9 @@ $(document).ready(function () {
 			$("#casa").css("display", "block");
 			// alert('ya casi llegas al hogar solo sube 2 cuadras mas');
 
-			alert($("#casa").scrollTop() + " px");
+			alert("ya casi llegas a la casa solo sube 2 cuadras mas ");
 			$("#llave2").css("display", "block");
 		}
 	});
 });
+

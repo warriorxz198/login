@@ -173,8 +173,6 @@ footer {
 	height: auto;
 	background-color: indigo;
 	padding: 5rem 2rem 2rem 2rem;
-}
-#escondido p {
 	color: white;
 }
 #escondido img {
@@ -192,7 +190,9 @@ footer {
 	display: block;
 	margin: auto;
 }
-
+#Tescondido {
+	display: none;
+}
 @media (min-width: 600px) {
 	#boton_menu {
 		display: none;
@@ -233,3 +233,20 @@ footer {
 		height: 100vh;
 	}
 }
+
+/* estilos por si el navegador del usuario tiene un modo oscuro predefinido  */
+/* para siguientes acutalizaciones */
+/* @media (prefers-color-scheme: dark) {
+	p {
+		color: black;
+	}
+	.titulos {
+		color: black;
+	}
+	#Bpedro {
+		color: black;
+	}
+	.Tpedro {
+		color: black;
+	}
+} */
