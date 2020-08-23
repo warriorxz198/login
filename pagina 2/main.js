@@ -78,7 +78,7 @@ var Michi = false;
 
 function logros(logro_mensaje) {
 
-	$(".audio")[1].play();
+	$(".audio")[0].play();
 
 	alert("logro desbloqueado: " + logro_mensaje)
 };
@@ -92,7 +92,7 @@ $(function gato() {
 			Michi = true;
 			Pedro = true;
 			logros("gato");
-			$(".audio")[0].play();
+			$(".audio")[1].play();
 			$("#Tescondido").css("display", "block");
 		}
 	});
@@ -115,7 +115,13 @@ $(function llave() {
 		alert("has econtrado la llave!!!")
 	});
 });
+$(function llave2() {
+	$("#llave").on("click", function () {
+		$(this).toggle();
+		$(location).attr('href', '../pagina 3/index.html')
 
+	})
+})
 $(function eventoPedro() {
 	$('#Bpedro').on('click', function () {
 		if (Pedro == true) {
@@ -134,8 +140,6 @@ $(document).ready(function () {
 	$('#ricaurte').on('click', function () {
 		if (Pedro == true) {
 			$("#casa").css("display", "block");
-			// alert('ya casi llegas al hogar solo sube 2 cuadras mas');
-
 			alert("ya casi llegas a la casa solo sube 2 cuadras mas ");
 			$("#llave2").css("display", "block");
 		}
