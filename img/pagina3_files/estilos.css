@@ -1,0 +1,42 @@
+img {
+	width: 100%;
+}
+
+#sala {
+	background-color: coral;
+	padding: 5rem 2rem 2rem 2rem;
+}
+/* ------------------------------------                boton */
+#cambio {
+	display: flex;
+	position: relative;
+	border-radius: 1000px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: #33313e;
+	color: white;
+}
+.cambio::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: unset;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	background-color: white;
+}
+.cambio .activo {
+	left: unset;
+	right: 0;
+	background-color: red;
+}
+.cambio span {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+}

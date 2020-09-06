@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5501/pagina%203/index.html -->
+<html lang="es" nighteye="disabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>pagina3</title>
+		<link rel="stylesheet" href="./pagina3_files/menu.css">
+		<link rel="stylesheet" href="./pagina3_files/estilos.css">
+		<link rel="stylesheet" href="./pagina3_files/fontello.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="contenedor_menu">
+					<h1 id="logos ">Logos</h1>
+					<i id="boton_menu" class="boton_menu icon-menu"></i><i onclick="menu_2()" id="boton_left" class="boton_left icon-left-big"></i>
+				</div>
+				<ul id="menu">
+					<li class="links"><a href="http://127.0.0.1:5501/pagina%203/index.html#inicio">Prologo</a></li>
+					<li class="links"><a href="http://127.0.0.1:5501/pagina%203/index.html#Entrevista">Entrevista</a></li>
+					<li class="links"><a href="http://127.0.0.1:5501/pagina%203/index.html#Lugares">Lugares</a></li>
+					<li class="links">
+						<a id="conocidos" href="http://127.0.0.1:5501/pagina%203/index.html#Sconocidos">Conocidos</a>
+					</li>
+					<li class="links escondido"><a href="http://127.0.0.1:5501/pagina%203/index.html#escondido">escondido</a></li>
+					<li onclick="menu_2()" id="cambio">
+						<a>logros</a>
+					</li>
+				</ul>
+				<ul id="menu2">
+					<li>
+						<a href="http://127.0.0.1:5501/pagina%203/index.html#inicio"><span class="icon-cancel-1"></span>menu2</a>
+					</li>
+					<li>
+						<a><span class="icon-cancel-1"></span>tema4</a>
+					</li>
+					<li>
+						<a><span class="icon-cancel-1"></span>tema5</a>
+					</li>
+					<li id="Michi">
+						<a><span id="michi" class="icon-check"></span>gato</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="sala">
+			<button class="cambio active" id="cambio">
+				<span class="icon-sun"></span>
+				<span class="icon-moon"></span>
+			</button>
+
+			<h1>sala</h1>
+			<img src="./pagina3_files/sala.jpg" alt="">
+			<p>*al entrar en la casa logras ver una sala*</p>
+			<img src="./pagina3_files/gato_negro.jpg" alt="">
+			<p>al parecer no ahi nadie</p>
+			<p>
+				ya se esta haciendo tarde podrias apagar la luz para irnos a dormir
+				pofavor?
+			</p>
+			<p id="sala_respuetaGato_1" class="respuestas">
+				no pasa nada si me quedo?
+			</p>
+			<p id="sala_respuetaGato_2" class="respuestas">
+				mo creo que deba quedarme mejor me voy
+			</p>
+		</section>
+
+		<!-- sonidos utilizados en "main js" en algunos eventos -->
+
+		<audio class="audio">
+			<source src="../sonidos/miau_gato.mp3" type="audio/mpeg">
+		</audio>
+		<audio class="audio">
+			<source src="../sonidos/logro_sonido.mp3" type="audio/mpeg">
+		</audio>
+		<audio class="audio">
+			<source src="../sonidos/puerta_abre.mp3" type="audio/mpeg">
+		</audio>
+
+		<script src="./pagina3_files/jquery-3.4.1.min.js.descarga"></script>
+		<script src="./pagina3_files/menu.js.descarga"></script>
+		<script src="./pagina3_files/main.js.descarga"></script>
+	<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
