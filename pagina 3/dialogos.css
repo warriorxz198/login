@@ -1,0 +1,42 @@
+/* -------------------------------------------diseño de dialogos en general---------------------------------------------------------------------- */
+.dialogo {
+	display: grid;
+	grid-template-columns: repeat(2);
+	grid-auto-rows: minmax(30px, auto);
+	grid-template-areas:
+		'h2 h2'
+		'img p';
+	padding: 0 0.5rem 0 0.5rem;
+	margin: 1rem auto;
+	border: solid black;
+	margin-top: 1rem;
+	max-width: 590px;
+	height: auto;
+	background-color: darkcyan;
+	color: black;
+}
+.dialogo > img {
+	grid-area: img;
+	clip-path: circle(40% at 50% 50%);
+	max-width: 100px;
+	height: 4rem;
+	width: 7rem;
+}
+.dialogo > h1 {
+	grid-area: h2;
+	margin: 1rem 0 0 0;
+	border-bottom: solid 1px black;
+	height: 100%;
+	font-size: 20px;
+}
+.dialogo > p {
+	padding: 1.5rem 0 0 0.5rem;
+	grid-area: p;
+	font-size: initial;
+	text-align: left;
+}
+/* -------------------------------------------diseño de dialogso mas especificos---------------------------------------------------------------------- */
+
+#principal {
+	background-color: pink;
+}
