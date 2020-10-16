@@ -1,6 +1,9 @@
 img {
 	width: 100%;
-	margin: 2rem 0;
+	margin: 2rem auto;
+}
+section {
+	padding: 5rem 2rem;
 }
 
 /* estilos para cuando haya una opcion de resputa en la historia  */
@@ -8,24 +11,35 @@ img {
 .respuestas {
 	max-width: 600px;
 	margin: 1em auto 0 auto !important;
-	color: white;
 	border: solid 3px black;
 	background-color: rgb(251, 90, 114);
+	color: white;
 	cursor: pointer;
-	margin: 1rem 0;
 }
 
-#sala {
+#sala,
+#Familia {
 	background-color: #012c61;
 	color: white;
-	padding: 5rem 2rem 2rem 2rem;
 }
 #sala.activo {
 	background-color: lightseagreen;
 	transition: background-color 2s, color 2s;
 }
+#sala_respuetaGato_3,
+.cuarto_opciones,
+#Familia,
+#sala_respuetaGato_7,
+#sala_piojoso,
+#sala_piojoso_opcion1,
+#sala_piojoso_2,
+#sala_estrella_final,
+#eventofinal {
+	display: none;
+}
 
-/* ------------------------------------ Boton "dia noche"  -------------- */
+/* ------------------------------------ Boton "dia noche"  ---------------------------------------------------- */
+
 .cambio {
 	display: none;
 	position: relative;
@@ -57,8 +71,99 @@ img {
 	right: 0;
 }
 #cambio span {
+	display: block;
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	display: block;
+}
+
+/* ------------------------------------estilos de insetar codigo la id sigue por definirse ------------------------------ */
+
+#cajas {
+	display: none;
+	padding: 2rem;
+}
+#caja {
+	max-width: 550px;
+
+	padding: 2rem;
+	margin: auto;
+	background-color: rgb(32, 32, 32);
+}
+#caja input[type='text'] {
+	display: inline-block;
+	width: 84%;
+	border-radius: 2rem;
+	border: solid 3px #036500 !important;
+	text-align: center;
+	font-size: 1.5rem;
+	background-color: #2ba70c;
+	color: #036500;
+}
+#caja input[type='text']::placeholder {
+	color: #036500;
+}
+
+#caja input[type='submit'] {
+	display: inline-block;
+	border-radius: 100%;
+	font-size: 1rem;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+}
+#caja input[type='text'],
+#caja input[type='submit'] {
+	outline: none;
+	line-height: 2rem;
+	border: none;
+}
+
+@media (min-width: 700px) {
+	#caja input[type='text'] {
+		width: 90%;
+		font-size: 2rem;
+	}
+}
+
+/* ------------------------------------------------estilos de la secion "cuarto"---------------------------------------------------------- */
+
+#cuarto {
+	display: none;
+	background-color: #717067;
+	padding-bottom: 8rem !important;
+}
+.objetos {
+	color: red;
+	background-color: black;
+	cursor: pointer;
+}
+#cuarto_estanteria,
+#cuarto_portatil,
+#cuarto_portatil_opcion3,
+#cuarto_portatil_dialogo,
+#carta_aniversario,
+#cuarto_cajon,
+#cuarto_cajon2,
+#anillo {
+	display: none;
+}
+/* ------------------------------------------------estilos de la secion "cocina"---------------------------------------------------------- */
+
+#cocina {
+	display: none;
+	background-color: limegreen;
+}
+
+#nota,
+#cocina_volver,
+#cocina_2,
+#cocina_3,
+#cocina_3_pregunta {
+	display: none;
+}
+/* ------------------------------------------------estilos de la secion "secreto"---------------------------------------------------------- */
+
+#secreto {
+	display: none;
 }

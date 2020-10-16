@@ -3,17 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>pagina3</title>
+		<title>Casita</title>
+		<link id="icono_pagina" rel="icon" href="casa.ico" />
 		<link rel="stylesheet" href="../pagina 2/fontello.css" />
-		<link rel="stylesheet" href="../pagina 2/menu.css" />
-		<link rel="stylesheet" href="dialogos.css" />
+		<link rel="stylesheet" href="../menu/menu.css" />
+		<link rel="stylesheet" href="../dialogos/dialogos.css" />
 		<link rel="stylesheet" href="estilos.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
 				<div id="contenedor_menu">
-					<h1 id="logos ">Logos</h1>
+					<h1 id="logos">Logos</h1>
 					<i id="boton_menu" class="boton_menu icon-menu"></i
 					><i
 						onclick="menu_2()"
@@ -51,31 +52,329 @@
 		</header>
 
 		<section id="sala">
-			<button class="cambio" id="cambio">
-				<span class="icon-sun"></span>
-				<span class="icon-moon"></span>
-			</button>
+			<div id="contenedor_boton">
+				<button class="cambio" id="cambio">
+					<span class="icon-sun"></span>
+					<span class="icon-moon"></span>
+				</button>
+			</div>
 
-			<h1 id="titulo_sala">sala</h1>
+			<div id="sala_principal">
+				<h1 id="titulo_sala">Sala</h1>
 
-			<img src="../img/sala.jpg" alt="" />
+				<img src="../img/sala.jpg" alt="" />
 
-			<p>*al entrar en la casa logras ver una sala*</p>
+				<p>*al entrar en la casa logras ver una sala*</p>
 
-			<img id="imagen_gato_negro" src="../img/gato_negro.jpg" alt="" />
+				<img id="imagen_gato_negro" src="../img/gato_negro2.jpg" alt="" />
 
-			<p>*al parecer no ahi nadie*</p>
+				<p>*al parecer no ahi nadie*</p>
 
-			<div id="Anterior_respuestas"></div>
+				<div id="Anterior_respuestas"></div>
 
-			<p id="sala_respuetaGato_1" class="respuestas">
-				no pasa nada si me quedo?
-			</p>
+				<p id="sala_respuetaGato_1" class="respuestas">
+					no pasa nada si me quedo?
+				</p>
 
-			<p id="sala_respuetaGato_2" class="respuestas">
-				no creo que deba quedarme mejor me voy
-			</p>
+				<p id="sala_respuetaGato_2" class="respuestas">
+					no creo que deba quedarme mejor me voy
+				</p>
+
+				<p id="sala_respuetaGato_3" class="respuestas">ir a la Sala</p>
+
+				<p id="sala_respuetaGato_6" class="respuestas cuarto_opciones">
+					hablar con piojoso
+				</p>
+
+				<p id="sala_respuetaGato_4" class="respuestas cuarto_opciones">
+					ir a la habitacion
+				</p>
+
+				<p id="sala_respuetaGato_5" class="respuestas cuarto_opciones">
+					ir a la cocina
+				</p>
+
+				<p id="sala_respuetaGato_7" class="respuestas">investigar el ruido</p>
+			</div>
+
+			<div id="sala_piojoso">
+				<h1>sala</h1>
+
+				<img src="../img/gato_blanco2.jpg" alt="" />
+
+				<p>
+					*vez a piojoso mirando por una ventana que da directamente hacia la
+					calle parece como si estuviera esperando a alguien es mejor dejarlo
+					tranquilo por lo menos hasta tener un motivo para hablarle
+				</p>
+
+				<p id="sala_piojoso_opcion1" class="respuestas">
+					preguntale acerca del aparato de la estanteria
+				</p>
+
+				<div id="sala_piojoso_2">
+					<p>*acaricias a piojoso para llamar su atencion y te mira</p>
+				</div>
+
+				<p id="sala_piojoso_volver" class="respuestas">
+					volver a mirar la sala
+				</p>
+			</div>
+
+			<div id="sala_estrella_final">
+				<h1>sala</h1>
+				<p>
+					*de repente sientes un peso que enpuja con un poco de fuerza tu pierna
+					y rapidamente miras hacia abajo
+				</p>
+				<img src="../img/gato_negro_F.jpg" alt="" />
+
+				<p>*es estrella al verla se sienta en el piso y comienza a hablarte</p>
+
+				<div id="sala_estrella_final2"></div>
+
+				<p id="sala_estrella_volver" class="respuestas">
+					volver a mirar la sala
+				</p>
+			</div>
+
+			<div id="Familia">
+				<h1>cuadro</h1>
+				<p>
+					*logras ver que un cuadro que esta en la pared no estaba ahi antes
+					parece que salio de algun lugar bastante oscuro, en el cuadro se
+					aprecia una familia feliz de 4 personas 2 hijos y los padres
+				</p>
+				<img src="../img/familia_anime.jpg" alt="" />
+
+				<p id="Familia_volver" class="respuestas">volver a la sala</p>
+			</div>
+
+			<div id="eventofinal">
+				<h1>sala</h1>
+
+				<p>
+					*de repente escuchas como alguien comienza a abrir la puerta principal
+					y te quedas mirando a ver quien puede ser
+				</p>
+				<p>
+					*escuchas que entra y cierra la puerta despues de unos pequeños
+					instantes lo logras ver
+				</p>
+
+				<img src="../img/yo.jpg" alt="" />
+
+				<img src="../img/flaquita.jpg" alt="" srcset="" />
+
+				<p>*te sonrie y sale corriendo hacia ti y te abraza</p>
+
+				<div id="eventofinal_dialogo"></div>
+
+				<img src="../img/abrazo.jpg" alt="" srcset="" />
+
+				<h1 style="color: red">
+					felicidades mi amor acabas de terminar el jueguito uwu
+				</h1>
+			</div>
 		</section>
+
+		<section id="cuarto">
+			<div id="cuarto_principal">
+				<h1>Cuarto</h1>
+				<img src="../img/cuarto.jpg" alt="" />
+
+				<p>
+					*entras a un cuarto bastante espaciosa al parecer esta es la
+					habitacion del dueño
+				</p>
+
+				<p>
+					*al ver mas a fondo logras ver las ventanas que dan hacia el exterior
+					de la casa y a su lado
+					<samp id="estanteria" class="objetos">una estanteria </samp> de libros
+					, a su lado tambien logras ver un equipo de sonido algo antiguo y
+					encima de este un
+					<samp id="portatil" class="objetos">portatil</samp>
+					logras ver una doble cama no parece muy comoda y a su lado logras ver
+					un <samp id="cajon" class="objetos">cajon</samp>
+				</p>
+				<p id="cuarto_volver" class="respuestas">volver a la sala</p>
+			</div>
+
+			<div id="cuarto_portatil">
+				<h1>portatil</h1>
+
+				<img src="../img/portatil apagado.jpg" alt="" />
+
+				<p id="cuarto_portatil_texto">
+					*tu mirada se enfoja en un portatil que se encuentra en la habitacion,
+					es un portatil que al parecer es del 2014 por el diseño
+				</p>
+
+				<div id="cuarto_portatil_dialogo"></div>
+
+				<p id="cuarto_portatil_opcion1" class="respuestas">
+					enciendes el portatil y revisas su contendio
+				</p>
+
+				<p id="cuarto_portatil_opcion2" class="respuestas">
+					revisas el resto de la habitacion primero
+				</p>
+
+				<p id="cuarto_portatil_opcion3" class="respuestas">
+					pagina uwu (antigua)
+				</p>
+			</div>
+
+			<div id="cuarto_estanteria">
+				<h1>estanteria</h1>
+
+				<img src="../img/estanteria.jpg" alt="" />
+
+				<p id="cuarto_estanteria_texto">
+					*tu mirada se enfoja en una estanteria hubicada en una esquina de la
+					habitacion dando un vistasto rapido te das cuenta que la mayoria de
+					libros hubicados hay soy bastante antiguos y incluso algunos son
+					inservibles debido a que son libros relacionados a escuela los cuales
+					se acutalizan constantemente
+				</p>
+
+				<p id="cuarto_estanteria_opcion1" class="respuestas rEstanteria">
+					miras a detalle los libros
+				</p>
+				<p id="cuarto_estanteria_opcion2" class="respuestas rEstanteria">
+					vuelves a mirar el resto de la habitacion
+				</p>
+
+				<!-- el id de ambos div es temporal cambiarlo en el futuro-->
+				<div id="cajas">
+					<div id="caja">
+						<input
+							type="text"
+							name="codigo"
+							placeholder="-------------"
+							id="codigos"
+							autocomplete="off"
+						/>
+						<input type="submit" value="enviar" id="enviar" />
+					</div>
+				</div>
+
+				<img src="../img/carta_aniversario.jpg" id="carta_aniversario" alt="" />
+			</div>
+
+			<div id="cuarto_cajon">
+				<h1>cajon</h1>
+
+				<img src="../img/cajon_cerrado.jpg" alt="" srcset="" />
+
+				<p>
+					*tu vista te enfoja en un cajon pequeño que esta al lado de la cama,
+					no tiene nada encima
+				</p>
+
+				<p id="cajon_abrir" class="respuestas">abrir el cajon</p>
+				<div id="cajon_comentario"></div>
+				<p id="cuarto_cajon_volver" class="respuestas cuarto_cajon_volver">
+					volver a ver el resto de la habitacion
+				</p>
+			</div>
+			<div id="cuarto_cajon2">
+				<h1>cajon</h1>
+
+				<img src="../img/cajon_abrierto.jpg" alt="" srcset="" />
+
+				<p>
+					*logras abrir sin nigun problema el cajon y miras su interior , dentro
+					se encuentra una carta y una caja negra
+				</p>
+
+				<img src="../img/para_siempre.jpg" alt="" srcset="" />
+
+				<img src="../img/anillo_cerrado.png" alt="" srcset="" />
+
+				<img src="../img/anillo_abierto.png" id="anillo" alt="" srcset="" />
+
+				<p id="cuarto_cajon2_caja" class="respuestas">abrir la caja negra</p>
+
+				<p id="cuarto_cajon2_volver" class="respuestas">
+					volver a ver el resto de la habitacion
+				</p>
+			</div>
+		</section>
+
+		<section id="cocina">
+			<h1>Cocina</h1>
+
+			<img src="../img/cocina.jpg" id="cocina_foto" alt="" srcset="" />
+			<div id="concina_1">
+				<p>
+					*al entrar a la cocina logras escuchar una campanita como la de un
+					collar...
+				</p>
+
+				<p>*sientes algo en tu pierna y miras hacia abajo</p>
+
+				<img src="../img/gato_gris.jpg" alt="" />
+
+				<p>
+					cuando la gata se da cuenta que tienes su atencion te mira fijamente
+				</p>
+
+				<img src="../img/gato_gris2.jpg" alt="" srcset="" />
+
+				<div id="cocina_dialogo"></div>
+
+				<p id="comida" class="respuestas">abrir el cajon de la comida</p>
+			</div>
+
+			<div id="nota">
+				<img src="../img/nota.png" alt="" />
+				<div id="notaD"></div>
+				<p id="nota_volver" class="respuestas">volver a mirar la cocina</p>
+			</div>
+
+			<div id="cocina_2">
+				<p>
+					*abres el cajon de comida y sacas un paquete de comida de gato y le
+					sirves un poco en le plato que esta al lado de pancho, cuando vas a
+					guardar la comida logras ver una nota que esta en el cajon
+				</p>
+
+				<p id="Nota" class="respuestas">miras a detalle la nota</p>
+
+				<p id="pancho" class="respuestas">hablas con pancho</p>
+			</div>
+
+			<div id="cocina_3">
+				<p>*vez a pancho comiendo en su plato de comida</p>
+
+				<img src="../img/gato_gris_comiendo.jpg" alt="" srcset="" />
+
+				<p id="pregunta" class="respuestas">preguntarle como sabe tu nombre</p>
+
+				<p id="cocina_3_volver" class="respuestas">volver a mirar la cocina</p>
+			</div>
+
+			<div id="cocina_3_pregunta">
+				<img src="../img/gato_gris_comiendo.jpg" alt="" srcset="" />
+
+				<p>*acaricias a pancho para llamar su atencion</p>
+
+				<img src="../img/gato_gris2.jpg" alt="" srcset="" />
+
+				<div id="cocina_3_pregunta2"></div>
+
+				<p id="cocina_3_pregunta_vovler" class="respuestas">
+					volver a mirar la cocina
+				</p>
+			</div>
+
+			<p id="cocina_volver" class="respuestas">volver a la sala</p>
+		</section>
+
+		<!-- este section es completamente opcional aun vere que poner aqui -->
+		<section id="secreto"></section>
 
 		<!-- sonidos utilizados en "main js" en algunos eventos -->
 
@@ -91,10 +390,19 @@
 		<audio class="audio">
 			<source src="../sonidos/gallo.mp3" type="audio/mpeg" />
 		</audio>
+		<audio class="audio">
+			<source src="../sonidos/confirmado.mp3" type="audio/mpeg" />
+		</audio>
+		<audio class="audio">
+			<source src="../sonidos/gato_collar.mp3" type="audio/mpeg" />
+		</audio>
+		<audio class="audio">
+			<source src="../sonidos/cajon.mp3" type="audio/mpeg" />
+		</audio>
 
 		<script src="../pagina 2/jquery-3.4.1.min.js"></script>
-		<script src="menu.js"></script>
-		<script src="dialogos.js"></script>
+		<script src="../menu/menu.js"></script>
+		<script src="../dialogos/dialogos.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>

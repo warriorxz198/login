@@ -1,10 +1,21 @@
 var contador = 0;
 var contador2 = 0;
-var menu = document.getElementById('menu');
-var menu2 = document.getElementById('menu2');
-var boton1 = document.getElementById('boton_menu');
-var boton2 = document.getElementById('boton_left');
+const menu = document.getElementById('menu');
+const menu2 = document.getElementById('menu2');
+const boton1 = document.getElementById('boton_menu');
+const boton2 = document.getElementById('boton_left');
 var Pedro = false
+
+function monstrarEscondido() {
+	document
+		.querySelectorAll('.escondido')
+		.forEach((a) => (a.style.display = 'block'));
+	alert('desbloqueaste algo interesante en el menu mira que es!!!');
+	dialogos('#dialogo_derek', '', 'derek', 'Derek', '../img/Derek2.jpg', 'hola..... espero no asustarte con esta visita inesperada');
+	dialogos('#dialogo_derek', '', 'derek', 'Derek', '../img/Derek2.jpg', 'queria hablar contigo antes pero se me hacia imposible hasta ahora...');
+	dialogos('#dialogo_derek', '', 'derek', 'Derek', '../img/Derek2.jpg', 'necesito tu ayuda.....');
+	dialogos('#dialogo_derek', '', 'derek', 'Derek', '../img/Derek2.jpg', 'tengo que hacer un viaje ... un viaje al cual no podre llegar a lo que mas quiero y es mi gato');
+};
 
 $(document).ready(function mostrar_menu() {
 	$('#boton_menu').on('click', function () {
@@ -12,10 +23,7 @@ $(document).ready(function mostrar_menu() {
 		contador++;
 
 		if (contador === 9) {
-			document
-				.querySelectorAll('.escondido')
-				.forEach((a) => (a.style.display = 'initial'));
-			alert('desbloqueaste algo interesante en el menu mira que es!!!');
+			monstrarEscondido();
 		}
 	});
 });
@@ -29,10 +37,7 @@ $(function despeglar() {
 			contador++;
 
 			if (contador === 9) {
-				document
-					.querySelectorAll('.escondido')
-					.forEach((a) => (a.style.display = 'initial'));
-				alert('5 años han pasado y ante ti me eh presentado (desbloqueaste algo en el menu)');
+				monstrarEscondido();
 			}
 		}
 
@@ -41,10 +46,7 @@ $(function despeglar() {
 			contador2++;
 		}
 		if (contador2 === 5) {
-			document
-				.querySelectorAll('.escondido')
-				.forEach((a) => (a.style.display = 'initial'));
-			alert('5 años han pasado y ante ti me eh presentado (desbloqueaste algo en el menu)');
+			monstrarEscondido();
 		}
 	});
 });
@@ -115,6 +117,7 @@ $(function llave() {
 		alert("has econtrado la llave!!!")
 	});
 });
+
 $(function llave2() {
 	$("#llave").on("click", function () {
 		$(this).toggle();
@@ -131,7 +134,8 @@ $(function eventoPedro() {
 			document
 				.querySelectorAll('.Tpedro')
 				.forEach((a) => (a.style.display = 'none'));
-			$("#Tpedrofinal").text("asi que el viejo darek te envio conmigo?.... bien a donde tienes que ir es subir por aqui hasta llegar al barrio ricaurte y subir 2 cuadras y encontras una casa azul ahi sera el lugar ... no te preocupes no ahi mas casas azules por ahi");
+			$("#Tpedrofinal").css("display", "none");
+			dialogos('#Sconocidos_dialogo', '', 'Pedro', 'Pedro', '../img/pedro.jpg', 'asi que el viejo darek te envio conmigo?.... bien a donde tienes que ir es subir por aqui hasta llegar al barrio ricaurte y subir 2 cuadras y encontras una casa azul ahi sera el lugar ... no te preocupes no ahi mas casas azules por ahi')
 		}
 	});
 });
@@ -142,7 +146,7 @@ $(document).ready(function () {
 			$("#casa").css("display", "block");
 			alert("ya casi llegas a la casa solo sube 2 cuadras mas ");
 			$("#llave2").css("display", "block");
+			$("footer").css("display", "block");
 		}
 	});
 });
-

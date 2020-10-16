@@ -17,10 +17,9 @@
 }
 .dialogo > img {
 	grid-area: img;
-	clip-path: circle(40% at 50% 50%);
-	max-width: 100px;
+	object-fit: contain;
 	height: 4rem;
-	width: 7rem;
+	width: 100%;
 }
 .dialogo > h1 {
 	grid-area: h2;
@@ -30,13 +29,17 @@
 	font-size: 20px;
 }
 .dialogo > p {
-	padding: 1.5rem 0 0 0.5rem;
+	padding: 1.5rem 0 0 0;
 	grid-area: p;
 	font-size: initial;
 	text-align: left;
+	width: 30vw;
 }
 /* -------------------------------------------diseño de dialogso mas especificos---------------------------------------------------------------------- */
 
 #principal {
 	background-color: pink;
+}
+#piojoso {
+	background-color: #f97431;
 }

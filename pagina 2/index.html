@@ -7,9 +7,10 @@
 			content="width=device-width, initial-scale=1.0, user-scalable=no"
 		/>
 		<title>pagina 2</title>
-		<link rel="stylesheet" href="menu.css" />
-		<link rel="stylesheet" href="estilos.css" />
 		<link rel="stylesheet" href="fontello.css" />
+		<link rel="stylesheet" href="../menu/menu.css" />
+		<link rel="stylesheet" href="../dialogos/dialogos.css" />
+		<link rel="stylesheet" href="estilos.css" />
 	</head>
 	<body>
 		<header>
@@ -51,6 +52,7 @@
 				</ul>
 			</nav>
 		</header>
+
 		<section id="inicio">
 			<h1 class="titulos">¿Quien es Darek Edgeworth?</h1>
 			<p>
@@ -62,6 +64,7 @@
 				sola persona y por sus grandes libros de fantasia
 			</p>
 		</section>
+
 		<section id="casa">
 			<h1 class="titulos">casa</h1>
 			<p>
@@ -89,6 +92,7 @@
 				/>
 			</div>
 		</section>
+
 		<section id="Entrevista">
 			<h1 class="titulos">Entrevista</h1>
 			<div id="contenedor_Fderek">
@@ -96,25 +100,22 @@
 			</div>
 			<p class="Tderek">
 				cuando llegamos a la residencia del señor Darek se encontraba
-				acariciando a su gato "copito" aun que contesta al nombre de "piojoso"
-				el cual de vez en cuando relata en sus libros como un ser mitologico
+				acariciando a su gata "estrella", una gata negra y bastante pequeña con
+				los ojos verdes y por lo visto bastante timidia apenas noto nuestra
+				presencia esta misma salio corriendo hacia la casa
 			</p>
 			<p class="Tderek">
 				cuando el señor derek nos noto pudimos comenzar la entrevista
 			</p>
 			<br />
-			<h3 class="titulos">
-				¿de donde sacas tu inspiracion para tus libros?
-			</h3>
+			<h3 class="titulos">¿de donde sacas tu inspiracion para tus libros?</h3>
 			<p class="Tderek">
 				de los lugares que visito algunos me gustan tanto como para realizar un
 				libro ya sea por la gente que conoci alguna zona en especifico que vi o
 				alguna historia que escuche
 			</p>
 			<br />
-			<h3>
-				¿porque realizas tu viaje en solitario?
-			</h3>
+			<h3>¿porque realizas tu viaje en solitario?</h3>
 			<br />
 			<p>
 				porque soy muy timido para pedirle a alguien que me acompañe es mas como
@@ -123,6 +124,7 @@
 				que pudiera superar mi timides
 			</p>
 		</section>
+
 		<section id="Lugares">
 			<h1 class="titulos">Lugares</h1>
 			<p>
@@ -150,72 +152,60 @@
 				><strong> durotar</strong> y <strong> ayaviri.</strong>
 			</p>
 		</section>
-		<section class="escondido">
-			<div id="escondido">
-				<h1 class="titulos">Darek Edgeworth</h1>
-				<p>*de repente aparece un señor frente a ti*</p>
-				<img
-					class="imagenes_escondidas"
-					src="../img/derek 2.jpg"
-					loading="lazy"
-					alt="imagen"
-					srcset=""
-				/>
-				<p>hola..... <br />espero no asustarte con esta visita inesperada</p>
-				<br />
-				<p>
-					queria hablar contigo antes pero se me hacia imposible hasta ahora...
-				</p>
-				<br />
-				<p>necesito tu ayuda.....</p>
-				<br />
-				<p>
-					tengo que hacer un viaje ... un viaje al cual no podre llegar a lo que
-					mas quiero y es mi gato
-				</p>
-				<br />
-				<p>
-					me hizo compañia bastante tiempo y no quiero dejarlo en malas manos
-				</p>
-				<br />
-				<p>
-					te parecera que estoy loco pero el puede hablar ... solo hasle caso a
-					donde quiere llegar porfavor su intinto lo llevara con un buen dueño
-				</p>
-				<br />
-				<h1>piojoso</h1>
-				<img
-					id="Gato_negro"
-					class="imagenes_escondidas"
-					src="../img/gato_negro.jpg"
-					loading="lazy"
-					alt="imagen"
-				/>
-				<p id="Tescondido">
-					*el gato te mira fijamente* .... me podrias llevar donde pedro
-					porfavor? me dijieron que el sabe donde vive mi nuevo amigo
-				</p>
-			</div>
+
+		<section id="escondido" class="escondido">
+			<h1 class="titulos">Darek Edgeworth</h1>
+			<p>*de repente aparece un señor frente a ti*</p>
+			<img
+				class="imagenes_escondidas"
+				src="../img/Derek2.jpg"
+				loading="lazy"
+				alt="imagen"
+				srcset=""
+			/>
+			<p>me hizo compañia bastante tiempo y no quiero dejarlo en malas manos</p>
+			<br />
+			<p>
+				te parecera que estoy loco pero el puede hablar ... solo hasle caso a
+				donde quiere llegar porfavor su intinto lo llevara con un buen dueño
+			</p>
+			<div id="dialogo_derek"></div>
+
+			<h1>estrella</h1>
+			<img
+				id="Gato_negro"
+				class="imagenes_escondidas"
+				src="../img/gato_negro.jpg"
+				loading="lazy"
+				alt="imagen"
+			/>
+			<p id="Tescondido">
+				*la gata te mira fijamente* .... me podrias llevar donde pedro porfavor?
+				me dijieron que el sabe donde vive mi nuevo amigo
+			</p>
 		</section>
+
 		<section id="Sconocidos">
 			<h1 class="titulos" id="Tconocidos">Conocidos</h1>
-			<p class="Tpedro">
-				tenia de pequeño amigos tales como
-			</p>
+
+			<p class="Tpedro">tenia de pequeño amigos tales como</p>
+
 			<button class="Tpedro" id="Bpedro">pedro</button>
+
 			<img id="fotopedro" src="../img/pedro.jpg" alt="señor mayor.jpg" />
-			<p class="Tpedro">
-				era su mejor amigo hoy le preguntamos lo siguiente
-			</p>
-			<br /><br />
+
+			<p class="Tpedro">era su mejor amigo hoy le preguntamos lo siguiente</p>
+
 			<h3 class="Tpedro">¿como era derek de pequeño?</h3>
-			<br />
+
 			<p id="Tpedrofinal">
 				era alguien bastante sociable todo lo contrario a como es ahora, incluso
 				de pequeño le gustaba bastante escribir pero evidentemente sus historias
 				no eran tan buenas como las que hace actualmente
 			</p>
+			<div id="Sconocidos_dialogo"></div>
 		</section>
+
 		<footer>
 			<div id="contenedor_llave">
 				<img
@@ -238,6 +228,7 @@
 		</audio>
 
 		<script src="jquery-3.4.1.min.js"></script>
+		<script src="../dialogos/dialogos.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>
